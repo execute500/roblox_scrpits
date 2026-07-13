@@ -3,11 +3,11 @@ local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
 local function getRoot(char)
-	if char and char:FindFirstChildOfClass("Humanoid") then
-		return char:FindFirstChildOfClass("Humanoid").RootPart
-	else
-		return nil
-	end
+  if char and char:FindFirstChildOfClass("Humanoid") then
+    return char:FindFirstChildOfClass("Humanoid").RootPart
+  else
+    return nil
+  end
 end
 
 local function collectLifeOrb()
@@ -23,7 +23,7 @@ local function collectLifeOrb()
   end
   
   getRoot(LocalPlayer.Character).CFrame = island.Hexagon.LifeOrb7.CFrame
-  wait(0.1)
+  wait(0.5)
   fireproximityprompt(island.Hexagon.RegularHexagon.Attachment.ProximityPrompt)
   wait(10)
 end
@@ -49,7 +49,7 @@ local function collectGems()
       local chest = island.PrizeChest
       local pp = chest.Click.Attachment.ProximityPrompt
       getRoot(LocalPlayer.Character).CFrame = chest.Chest.CFrame
-      wait(0.1)
+      wait(0.5)
       fireproximityprompt(pp)
     end
     wait(5)

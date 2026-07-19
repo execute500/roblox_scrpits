@@ -1,8 +1,3 @@
-if game.PlaceId ~= 3365661357 then
-  print("错误的PlaceId!")
-  return
-end
-
 local Workspace = game:GetService("Workspace")
 local CoreGui = game:GetService("CoreGui")
 local ESPLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheHunterSolo1/Scripts/main/ESPLibrary"))()
